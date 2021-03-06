@@ -1,0 +1,2 @@
+# misc-typescript
+[test]()

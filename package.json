@@ -1,0 +1,12 @@
+{
+  "name": "misc-typescript",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "run": "tsc --rootDir ./src --outDir ./build ./src/index.ts && node ./build/index.js >> ./build/out.txt",
+    "lint": "npx prettier --write ./src"
+  }
+}
