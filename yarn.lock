@@ -5,11 +5,27 @@ __metadata:
   version: 4
   cacheKey: 7
 
+"@types/prompt-sync@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@types/prompt-sync@npm:4.1.0"
+  checksum: 21bc6832fb849c71bd9ac940e43fc1f91acb7f79a7e5f610141ca0b3bf97ba392be1c541598a0874bc2e9812e010854955e039dfb0c3f587b959190bb5c4aff6
+  languageName: node
+  linkType: hard
+
+"ansi-regex@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "ansi-regex@npm:4.1.0"
+  checksum: 53b6fe447cf92ee59739379de637af6f86b3b8a9537fbfe36a66f946f1d9d34afc3efe664ac31bcc7c3af042d43eabcfcfd3f790316d474bbc7b19a4b1d132dd
+  languageName: node
+  linkType: hard
+
 "misc-typescript@workspace:.":
   version: 0.0.0-use.local
   resolution: "misc-typescript@workspace:."
   dependencies:
+    "@types/prompt-sync": ^4.1.0
     prettier: ^2.2.1
+    prompt-sync: ^4.2.0
     tsc: ^1.20150623.0
     typescript: ^4.2.3
   languageName: unknown
@@ -21,6 +37,24 @@ __metadata:
   bin:
     prettier: bin-prettier.js
   checksum: 92c6c9f4b87eba1f28466edee57dd18c80d00b858edda77d46d1950d20e6e302b68ee255fc91133ba931e63c4577b5ae30da194d9626a8f3c0177778b91bf056
+  languageName: node
+  linkType: hard
+
+"prompt-sync@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "prompt-sync@npm:4.2.0"
+  dependencies:
+    strip-ansi: ^5.0.0
+  checksum: 9d712b8e03efa8d0ac4b3163dce1486a38f4c7ad90543d2c98a8bb6e8ebb98a062aa2af8e713e80e87f6ff51e8ee1b09a89095c6bfb2822b17f34bf5099f861f
+  languageName: node
+  linkType: hard
+
+"strip-ansi@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "strip-ansi@npm:5.2.0"
+  dependencies:
+    ansi-regex: ^4.1.0
+  checksum: 44a0d0d354f5f7b15f83323879a9112ea746daae7bef0b68238a27626ee757d9a04ce6590433841e14b325e8e7c5d62b8442885e50497e21b7cbca6da40d54ea
   languageName: node
   linkType: hard
 

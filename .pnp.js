@@ -37,11 +37,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/prompt-sync", "npm:4.1.0"],
             ["prettier", "npm:2.2.1"],
+            ["prompt-sync", "npm:4.2.0"],
             ["tsc", "npm:1.20150623.0"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@types/prompt-sync", [
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/@types-prompt-sync-npm-4.1.0-5d6d03c0bb-21bc6832fb.zip/node_modules/@types/prompt-sync/",
+          "packageDependencies": [
+            ["@types/prompt-sync", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ansi-regex", [
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/ansi-regex-npm-4.1.0-4a7d8413fe-53b6fe447c.zip/node_modules/ansi-regex/",
+          "packageDependencies": [
+            ["ansi-regex", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["misc-typescript", [
@@ -49,7 +69,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["misc-typescript", "workspace:."],
+            ["@types/prompt-sync", "npm:4.1.0"],
             ["prettier", "npm:2.2.1"],
+            ["prompt-sync", "npm:4.2.0"],
             ["tsc", "npm:1.20150623.0"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
@@ -61,6 +83,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prettier-npm-2.2.1-e0670992f8-92c6c9f4b8.zip/node_modules/prettier/",
           "packageDependencies": [
             ["prettier", "npm:2.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["prompt-sync", [
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/prompt-sync-npm-4.2.0-1ce4e10166-9d712b8e03.zip/node_modules/prompt-sync/",
+          "packageDependencies": [
+            ["prompt-sync", "npm:4.2.0"],
+            ["strip-ansi", "npm:5.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["strip-ansi", [
+        ["npm:5.2.0", {
+          "packageLocation": "./.yarn/cache/strip-ansi-npm-5.2.0-275214c316-44a0d0d354.zip/node_modules/strip-ansi/",
+          "packageDependencies": [
+            ["strip-ansi", "npm:5.2.0"],
+            ["ansi-regex", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
